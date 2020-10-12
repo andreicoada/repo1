@@ -25,4 +25,3 @@ if numarTel == "0744602279":
     print("Felicitari, ai validat cu succes numarul de telefon: ",numarTel)
 else:
     print("Ne pare rau, numarul de teleton ",numarTel, "nu se afla in baza noastra de date!")
-
