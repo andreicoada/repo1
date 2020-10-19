@@ -15,7 +15,7 @@ while selected_word != chosen_word and number_of_attempts:
         print('Trebuie introdusa o singura litera. Incercati din nou !')
         continue
     elif not next_letter.isalpha():
-        print('Caracterul introdus nu reprezinta o litera. Incercati din nou.')
+        print('Caracterul introdus trebuie sa fie o litera. Incercati din nou.')
         continue
     elif next_letter in wrong_choose or next_letter in selected_word:
         print('Litera a fost deja aleasa. Incercati din nou.')
