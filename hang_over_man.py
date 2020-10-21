@@ -6,10 +6,10 @@ chosen_word = random.choice(words_list)
 selected_word = list(['_'] * len(chosen_word))
 wrong_choose = []
 number_of_attempts = 7
-print('Your word until this moment is: {}'.format(' '.join(selected_word)))
+print('Cuvantul este: {}'.format(' '.join(selected_word)))
 
 while selected_word != chosen_word and number_of_attempts:
-    next_letter = input('Next letter: ').lower()
+    next_letter = input('Urmatoarea litera: ').lower()
 
     if len(next_letter) != 1:
         print('Trebuie introdusa o singura litera. Incercati din nou !')
@@ -25,11 +25,11 @@ while selected_word != chosen_word and number_of_attempts:
             if litera == next_letter:
                 selected_word[idx] = next_letter
 
-        print('Your word is : {}'.format(' '.join(selected_word)))
+        print('Cuvantul este : {}'.format(' '.join(selected_word)))
     else:
         wrong_choose.append(next_letter)
         number_of_attempts -= 1
-        print('Remaining attempts : {} | wrong letters: {}'.format(number_of_attempts, wrong_choose))
+        print('Numar de incercari ramase : {} | litere gresite: {}'.format(number_of_attempts, wrong_choose))
 
 if number_of_attempts:
     print('Succes! Cuvantul corect era: {}'.format(''.join(chosen_word)))
