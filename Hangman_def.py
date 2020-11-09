@@ -1,5 +1,5 @@
 import random
-lista_cuvinte = ["masina", "vapor", "calculator", "laptop", "avion", "maimuta", "caine"]
+lista_cuvinte = ["masina", "vapor", "calculator", "laptop", "avion", "maimuta", "caine","pisica","ceas", "telefon"]
 
 def alege_cuvant(lista_cuvinte):
     cuvant = random.choice(lista_cuvinte)
@@ -54,7 +54,6 @@ def joc(cuvant):
         print("Bravo, ai ghicit cuvantul!")
     else:
         print("Ai atins numarul maxim de incercari. Cuvantul era " + cuvant)
-
 
 def main():
     cuvant = alege_cuvant(lista_cuvinte)
